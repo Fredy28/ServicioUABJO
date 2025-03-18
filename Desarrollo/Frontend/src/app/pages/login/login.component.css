@@ -1,0 +1,31 @@
+.containerMain {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.login-container {
+    height: 80vh;
+    margin-top: 5%;
+    background-color: #ffffff;
+    padding: 5rem;
+    padding-top: 3rem !important;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.403);
+}
+
+.notAccount {
+    margin-top: 1rem;
+}
+.notAccount a{
+    color: #4e4d4d;
+    text-decoration: none !important;
+}
+
+.title {
+    font-size: 2.5em;
+}
+
+img {
+    width: 100px;
+}

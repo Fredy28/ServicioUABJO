@@ -1,0 +1,15 @@
+.title {
+    font-size: 2.5em;
+}
+
+.form-control {
+    border: 2px dotted #1ccfc9;
+}
+
+img {
+    width: 100px;
+}
+
+.bg-light {
+    background-color: rgba(92, 125, 187, 1) !important;
+}

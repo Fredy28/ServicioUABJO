@@ -1,0 +1,36 @@
+.card {
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+/*.card:hover {
+    transform: scale(1.03);
+}*/
+
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+}
+
+.text-truncate {
+    max-height: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.icon-volver {
+    display: inline-block;
+    color: #ffffff;
+    background-color: #27bdd4;
+    padding-right: 1.5rem;
+    padding-left: 1rem;
+    border-radius: 0.25rem;
+    font-size: 1.5rem;
+    margin: 1rem;
+    margin-left: 3rem;
+}
+
+.icon-volver:hover {
+    background-color: #351f1ed4;
+}

@@ -1,0 +1,48 @@
+<a routerLink="/opciones" class="icon-volver"><i class="fas fa-arrow-left"></i></a>
+<div>
+    <div class="containerMain">
+        <div class="form-container">
+            <h2 class="text-center mb-4">Agregue un nuevo docente</h2>
+            <form [formGroup]="agregar" (ngSubmit)="agregarProfesor()">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre completo:</label>
+                    <input type="text" class="form-control" id="nombre" formControlName="nombre" required placeholder="Ingrese el nombre del docente">
+                    <div *ngIf="agregar.get('nombre')?.invalid && (agregar.get('nombre')?.dirty || agregar.get('nombre')?.touched)" class="text-danger">
+                        <div *ngIf="agregar.get('nombre')?.errors?.['required']">El nombre es requerido.</div>
+                        <div *ngIf="agregar.get('nombre')?.errors?.['maxlength']">El nombre no puede exceder los 255 caracteres.</div>
+                    </div>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="ocupacion" class="form-label">Líneas de investigación</label>
+                    <input type="text" class="form-control" id="ocupacion" formControlName="ocupacion" required placeholder="Ingrese la ocupación o cargo del docente">
+                    <div *ngIf="agregar.get('ocupacion')?.invalid && (agregar.get('ocupacion')?.dirty || agregar.get('ocupacion')?.touched)" class="text-danger">
+                        <div *ngIf="agregar.get('ocupacion')?.errors?.['required']">Las líneas de ocupación son requeridas.</div>
+                        <div *ngIf="agregar.get('ocupacion')?.errors?.['maxlength']">No puede exceder los 255 caracteres.</div>
+                    </div>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="descripcion" class="form-label">Descripción</label>
+                    <textarea type="text" class="form-control" id="descripcion" formControlName="descripcion" placeholder="Ingrese una breve descripción al docente"></textarea>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="imagen" class="form-label">Imagen</label>
+                    <input type="text" class="form-control" id="imagen" formControlName="imagen" placeholder="Ingrese la URL de imagen">
+                </div>
+                
+                <div class="mb-3">
+                    <label for="drive" class="form-label">Drive</label>
+                    <input type="text" class="form-control" id="drive" formControlName="drive" placeholder="Ingrese el enlace para el drive">
+                </div>
+                
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-success btn-lg">Agregar</button>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</div>

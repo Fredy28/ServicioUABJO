@@ -1,0 +1,55 @@
+<div class="container mt-4">
+    <h2 class="text-center mb-4">Editar Docente</h2>
+    <form (ngSubmit)="guardarCambios()" #editarForm="ngForm">
+        <!-- Campo Nombre -->
+        <div class="mb-3">
+            <label class="form-label">Nombre</label>
+            <input type="text" class="form-control" [(ngModel)]="profesor.nombre" name="nombre" required maxlength="255" #nombre="ngModel">
+            <div *ngIf="nombre.invalid && (nombre.dirty || nombre.touched)" class="text-danger">
+                <div *ngIf="nombre.errors?.['required']">El nombre es requerido.</div>
+                <div *ngIf="nombre.errors?.['maxlength']">El nombre no puede exceder los 255 caracteres.</div>
+            </div>
+        </div>
+
+        <!-- Campo Cargo -->
+        <div class="mb-3">
+            <label class="form-label">Líneas de investigación</label>
+            <textarea type="text" class="form-control" [(ngModel)]="profesor.ocupacion" name="ocupacion" required maxlength="255" #ocupacion="ngModel"></textarea>
+            <div *ngIf="ocupacion.invalid && (ocupacion.dirty || ocupacion.touched)" class="text-danger">
+                <div *ngIf="ocupacion.errors?.['required']">Las líneas de investigación son requeridas</div>
+                <div *ngIf="ocupacion.errors?.['maxlength']">No puede exceder los 255 caracteres.</div>
+            </div>
+        </div>
+
+        <!-- Campo Descripción -->
+        <div class="mb-3">
+            <label class="form-label">Descripción</label>
+            <textarea class="form-control" [(ngModel)]="profesor.descripcion" name="descripcion"></textarea>
+        </div>
+
+        <!-- Campo Imagen URL -->
+        <div class="mb-3">
+            <label class="form-label">Imagen URL</label>
+            <input type="text" class="form-control" [(ngModel)]="profesor.imagen" name="imagen">
+        </div>
+
+        <!-- Campo Drive URL -->
+        <div class="mb-3">
+            <label class="form-label">Drive URL</label>
+            <input type="text" class="form-control" [(ngModel)]="profesor.drive" name="drive">
+        </div>
+
+        <!-- Botones -->
+        <div class="d-flex justify-content-between">
+            <button type="submit" class="btn btn-info btn-lg text-white" [disabled]="editarForm.invalid">
+                <i class="bi bi-save"></i> Guardar Cambios
+            </button>
+            <button type="button" class="btn btn-secondary" (click)="cancelar()">
+                <i class="bi bi-arrow-left"></i> Cancelar
+            </button>
+        </div>
+
+        <br>
+        <br>
+    </form>
+</div>

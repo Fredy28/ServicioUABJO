@@ -1,0 +1,32 @@
+.footer {
+    background-color: #351f1e;
+    padding: 2rem;
+    color: #fff;
+}
+
+.footer ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.footer ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer ul li a:hover {
+    color: #1ccfc9;
+}
+
+.footer .fa-facebook-f, 
+.footer .fa-twitter, 
+.footer .fa-instagram, 
+.footer .fa-linkedin-in {
+    margin: 0 0.5rem;
+}

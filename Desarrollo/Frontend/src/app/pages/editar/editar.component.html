@@ -1,0 +1,18 @@
+<a routerLink="/opciones" class="icon-volver"><i class="fas fa-arrow-left"></i></a>
+<div class="container mt-4">
+    <h2 class="text-center mb-4">Editar Docente</h2>
+    <div class="row">
+        <div class="col-md-4 mb-4" *ngFor="let profesor of profesores">
+            <div class="card shadow">
+                <img [src]="profesor.imagen" class="card-img-top" alt={{profesor.nombre}}>
+                <div class="card-body">
+                    <h5 class="card-title">{{ profesor.nombre }}</h5>
+                    <p class="card-text"><strong>Líneas de investigación:</strong> {{ profesor.ocupacion }}</p>
+                    <button (click)="editarProfesor(profesor.id)" class="btn btn-primary">
+                        <i class="bi bi-pencil"></i> Editar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

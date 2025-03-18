@@ -1,0 +1,28 @@
+<div class="text-center mt-4">
+    <h2 class="text-center mb-4">Catálogo general</h2>
+    <br>
+    <a href="https://drive.google.com/file/d/1L7pi7TUWVIBOnR9wX2DKJUXu13hduwi-/view" target="_blank">
+        <img src="assets/publicaciones.jpeg" alt="Catálogo general de publicaciones" class="img-clickable">
+    </a>
+</div>
+<br>
+<br>
+<div class="container mt-4">
+    <h2 class="text-center mb-4">Personal docente</h2>
+    <br>
+    <div class="row justify-content-center">
+        <div class="col-md-4 mb-4" *ngFor="let profesor of profesores">
+            <div class="card shadow h-100">
+                <img [src]="profesor.imagen" class="card-img-top" alt={{profesor.nombre}}>
+                <div class="card-body">
+                    <h5 class="card-title">{{ profesor.nombre }}</h5>
+                    <!--<p class="card-text"><strong>Líneas de investigación:</strong> {{ profesor.ocupacion }}</p>
+                    <p class="card-text text-truncate">{{ profesor.descripcion }}</p>-->
+                    <a [routerLink]="['/profesor', profesor.id]" class="btn btn-primary">
+                        <i class="bi bi-eye"></i> Ver más
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

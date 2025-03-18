@@ -1,0 +1,19 @@
+<a routerLink="/opciones" class="icon-volver"><i class="fas fa-arrow-left"></i></a>
+
+<div class="container mt-4">
+    <h2 class="text-center mb-4">Eliminar Docente</h2> 
+    <div class="row justify-content-center">
+        <div class="col-md-4 mb-4" *ngFor="let profesor of profesores">
+            <div class="card shadow h-100">
+                <img [src]="profesor.imagen" class="card-img-top" alt={{profesor.nombre}}>
+                <div class="card-body">
+                    <h5 class="card-title">{{ profesor.nombre }}</h5>
+                    <p class="card-text"><strong>Líneas de investigación:</strong> {{ profesor.ocupacion }}</p>
+                    <button (click)="confirmarEliminacion(profesor.id)" class="btn btn-danger">
+                        <i class="bi bi-trash"></i> Eliminar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

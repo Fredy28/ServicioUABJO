@@ -1,0 +1,26 @@
+.card {
+    margin-top: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.115);
+    transition: box-shadow 0.3s ease-in-out;
+    text-align: center;
+}
+
+.card:hover {
+    margin-top: 2rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.664);
+}
+
+.card-body img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.btnMore {
+    background-color: rgba(150, 180, 235, 1);
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

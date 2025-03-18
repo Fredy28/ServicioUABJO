@@ -1,0 +1,48 @@
+.containerMain {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.form-container {
+    height: auto;
+    width: 150vh;
+    margin-top: 5%;
+    background-color: #ffffff;
+    padding: 5rem;
+    padding-top: 3rem !important;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.403);
+}
+
+.notAccount {
+    margin-top: 1rem;
+}
+.notAccount a{
+    color: #4e4d4d;
+    text-decoration: none !important;
+}
+
+.title {
+    font-size: 2.5em;
+}
+
+img {
+    width: 100px;
+}
+
+.icon-volver {
+    display: inline-block;
+    color: #ffffff;
+    background-color: #27bdd4;
+    padding-right: 1.5rem;
+    padding-left: 1rem;
+    border-radius: 0.25rem;
+    font-size: 1.5rem;
+    margin: 1rem;
+    margin-left: 3rem;
+}
+
+.icon-volver:hover {
+    background-color: #351f1ed4;
+}
