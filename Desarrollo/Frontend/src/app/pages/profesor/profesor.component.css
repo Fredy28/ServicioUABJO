@@ -8,18 +8,19 @@
 
 .contenido-separado {
     display: flex;
-    flex-direction: column; /* Asegura que los elementos se apilen */
-    align-items: center; /* Centra los elementos */
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     margin-top: 20px;
 }
 
 .lineas-investigacion {
-    width: 100%; /* Ocupar todo el ancho */
-    text-align: center; /* Centra el texto */
+    width: 100%;
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: large;
+    font-size: x-large;
     white-space: pre-line;
+    color: rgb(148, 49, 38);
 }
 
 .btn-success {
@@ -35,6 +36,7 @@
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(0, 141, 138);
     font-weight: bold;
+    font-size: large;
 }
 
 .img-fluid {
