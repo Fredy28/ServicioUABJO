@@ -2,8 +2,8 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, tap } from 'rxjs';
 
-const APIURL = 'http://localhost:8000/api/auth';
-const APIProf = 'http://localhost:8000/api/profesores';
+const APIURL = 'http://frediserver.dynv6.net:8000/api/auth';
+const APIProf = 'http://frediserver.dynv6.net:8000/api/profesores';
 
 @Injectable({
   providedIn: 'root'

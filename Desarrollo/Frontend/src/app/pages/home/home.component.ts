@@ -34,6 +34,6 @@ export class HomeComponent implements OnInit {
   }
 
   trackById(index: number, prof: any): number {
-    return prof.id; // Devuelve el ID único del profesor
+    return prof.id;
   }
 }

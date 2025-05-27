@@ -9,7 +9,7 @@ import { AuthService } from '../../services/auth.service'; // Asegúrate de impo
   standalone: true,
   imports: [CommonModule, ReactiveFormsModule, RouterModule],
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css'] // Asegúrate de tener el nombre correcto para el archivo de estilo
+  styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
   loginForm: FormGroup;
@@ -19,7 +19,7 @@ export class LoginComponent {
     private authService: AuthService,
     private router: Router
   ) { 
-    // Inicialización del formulario reactivo
+    // Validaciones del formulario
     this.loginForm = this.fb.group({
       name: ['', Validators.required],
       password: ['', Validators.required]

@@ -16,7 +16,7 @@ class AuthController extends Controller
 
     public function login(Request $request)
     {
-        //Estas son las credenciales para el user y el passw
+        //Credenciales para el user y el passw
         $credentials = $request->only(['name', 'password']);
         
         //Autenticamos el user

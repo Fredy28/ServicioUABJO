@@ -2,7 +2,7 @@ import { inject, Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-const APIProf = 'http://localhost:8000/api/profesores';
+const APIProf = 'http://frediserver.dynv6.net:8000/api/profesores';
 
 @Injectable({
   providedIn: 'root'
